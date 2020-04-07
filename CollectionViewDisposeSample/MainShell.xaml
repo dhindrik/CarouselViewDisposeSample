@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CollectionViewDisposeSample.MainShell"
+       xmlns:local="clr-namespace:CollectionViewDisposeSample" FlyoutBehavior="Disabled">
+    <TabBar Route="main">
+        <ShellContent Route="tab1" Title="Tab1">
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Hej" />
+                    <Button Text="Show" Clicked="Button_Clicked" />
+                </StackLayout>
+            </ContentPage>
+        </ShellContent>
+        <ShellContent Title="Tab2">
+            <ContentPage>
+                <StackLayout>
+                    <Label Text="Hej igen" />
+                    <Button Text="Show" Clicked="Button_Clicked_1" />
+                </StackLayout>
+            </ContentPage>
+        </ShellContent>
+    </TabBar>
+    <ShellContent Route="photos">
+        <local:PhotosPage Title="Photos" />
+    </ShellContent>
+</Shell>
